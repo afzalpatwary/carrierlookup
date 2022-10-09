@@ -1,0 +1,52 @@
+/* Responsive css */
+
+@media (max-width: 1400px) {
+    .profile-panel {
+        grid-template-columns: 1fr;
+    }
+    .tabs__body {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .payments .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .btn-sidebar-toggle {
+        display: block;
+    }
+    .header {
+        padding-left: calc(0px + var(--theme-gutter) * 1);
+    }
+    #navigation-sidebar {
+        width: 0;
+    }
+    main#dashboard {
+        padding-left: calc(0px + var(--theme-gutter) * 1);
+    }
+    .payments .card-details {
+        padding: 30px 20px;
+    }
+    .tab-content-wrapper .received-email .email-input-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .payments .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        --theme-gutter: 20px;
+    }
+}
+
+
