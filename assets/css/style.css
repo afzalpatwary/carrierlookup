@@ -403,10 +403,7 @@ a {
 #navigation-sidebar .navbar-nav .nav-item.active .nav-icon * {
     fill: var(--yellow);
 }
-#navigation-sidebar .navbar-nav .nav-item.active .down-arrow {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
+
 #navigation-sidebar .navbar-nav .nav-item.active .down-arrow .drop-arrow * {
     stroke: var(--yellow);
 }
@@ -419,6 +416,10 @@ a {
     position: relative;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
+}
+#navigation-sidebar .navbar-nav .nav-item.show .down-arrow {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 /* navigation-sidebar style - end */
 
@@ -697,5 +698,8 @@ main#dashboard {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(2, 1fr);
+}
+.received-email .form-check-input{
+    border-color: var(--yellow) !important;
 }
 /* main#dashboar style  - end*/
