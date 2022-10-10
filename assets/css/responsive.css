@@ -47,6 +47,9 @@
     body {
         --theme-gutter: 20px;
     }
+    .header .header-row .header-right .dropdown .dropdown-menu{
+        right: 20px;
+    }
 }
 
 
